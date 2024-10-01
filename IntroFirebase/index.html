@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="/styles/index_style.css" />
+  </head>
+  <body>
+    <div class="notify"></div>
+    <div class="form">
+        <input
+          type="text"
+          id="name"
+          placeholder="coloque o nome"
+          autocomplete="off"
+        />
+        <input
+          type="email"
+          id="email"
+          placeholder="digite o email"
+          autocomplete="off"
+        />
+        <div class="button-container">
+          <button id="add_Data" class="add_Data">Cadastrar</button>
+          <button id="update_data" class="update_data">Atualizar</button>
+        </div>
+      </div>
+      
+    <div class="table">
+      <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+
+    <script type="module" src="/scripts/index_script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="dados_pessoais_style.css" />
+  </head>
+  <body>
+    <div class="notify"></div>
+    <div class="form">
+        <div class="nome-completo">
+            <label>Nome Completo:</label>
+            <input
+                type="text"
+                id="nome"
+                placeholder="Nome Completo"
+                autocomplete="off"
+            />
+        </div>
+    
+        <label>
+            RG:
+            <input
+                type="text"
+                id="rg"
+                placeholder="00.000.00-0"
+                autocomplete="off"
+            />
+        </label>
+    
+        <label>
+            Data:
+            <input
+                type="date"
+                id="data"
+                placeholder="__/__/____"
+                autocomplete="off"
+            />
+        </label>
+    
+        <label>
+            Nome do Pai:
+            <input
+                type="text"
+                id="pai"
+                placeholder="Nome do Pai"
+                autocomplete="off"
+            />
+        </label>
+    
+        <label>
+            CPF:
+            <input
+                type="text"
+                id="cpf"
+                placeholder="000.000.000-0"
+                autocomplete="off"
+            />
+        </label>
+    
+        <label>
+            Escolaridade:
+            <select name="escolaridade" id="escolaridade">
+                <option value="medio">Ensino Médio Completo</option>
+                <option value="superior">Ensino Superior Completo</option>
+            </select>
+        </label>
+    
+        <label>
+            Nome da Mãe:
+            <input
+                type="text"
+                id="mae"
+                placeholder="Nome da Mãe"
+                autocomplete="off"
+            />
+        </label>
+    
+        <label>
+            Telefone:
+            <input
+                type="number"
+                id="telefone"
+                placeholder="0000-0000"
+                autocomplete="off"
+            />
+        </label>
+    
+        <label>
+            Profissão:
+            <input
+                type="text"
+                id="profissao"
+                placeholder="Profissão"
+                autocomplete="off"
+            />
+        </label>
+    
+        <label>
+            Email:
+            <input
+                type="email"
+                id="email"
+                placeholder="example@email.com"
+                autocomplete="off"
+            />
+        </label>
+    
+        <label>
+            Celular:
+            <input
+                type="number"
+                id="celular"
+                placeholder="(00) 0000-0000"
+                autocomplete="off"
+            />
+        </label>
+    
+        <div class="button-container">
+            <button id="add_Data" class="add_Data">Cadastrar</button>
+            <button id="update_data" class="update_data">Atualizar</button>
+        </div>
+    </div>
+      
+    <div class="table">
+      <table>
+        <thead>
+            <tr>
+                <th>RG</th>
+                <th>Nome</th>
+                <th>Profissao</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+    <script type="module" src="dados_pessoais_script.js"></script>
+  </body>
+</html>
